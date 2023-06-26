@@ -1,9 +1,13 @@
+import { Header } from "../components/header/Header";
 import { LoginForm } from "../components/login/LoginForm";
 
 export const LoginPage = () => {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <>
+      <Header />
+      <div>
+        <LoginForm />
+      </div>
+    </>
   );
 };

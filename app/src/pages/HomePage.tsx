@@ -1,3 +1,10 @@
+import { Header } from "../components/header/Header";
+
 export const HomePage = () => {
-  return <div>HomePage</div>;
-};
+  return (
+    <>
+      <Header />
+      <div className="page-title">Welcome to Home Page!</div>
+    </>
+  );
+}

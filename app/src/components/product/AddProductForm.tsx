@@ -60,7 +60,7 @@ export const AddProductForm = () => {
 
   return (
     <div className="container">
-      <h2>Add Product</h2>
+      <h2 className="page-title">Add Product</h2>
       <form onSubmit={handleFormSubmit}>
         <div>
           <FormInput

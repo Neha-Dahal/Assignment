@@ -12,6 +12,31 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  padding: 60px 120px;
+  background-color: #1e1e1e;
+  color: #8e8e8e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 48px;
+  color: #e0e0e0;
+  margin: 40px auto;
+}
+
+a {
+  color: #8e8e8e;
+}
+
+a:hover {
+  color: #f75918;
 }

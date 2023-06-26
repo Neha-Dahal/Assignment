@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Header } from "../components/header/Header";
 import { GetProducts } from "../components/product/GetProducts";
 
 export const ProductsPage = () => {
   return (
-    <div>
-      <GetProducts />
-      <Link to="/add-product">Add products page</Link>
-    </div>
+    <>
+      <Header />{" "}
+      <div>
+        <GetProducts />
+      </div>
+    </>
   );
 };

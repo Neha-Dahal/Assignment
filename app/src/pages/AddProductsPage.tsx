@@ -1,5 +1,13 @@
+import { Header } from "../components/header/Header";
 import { AddProductForm } from "../components/product/AddProductForm";
 
 export const AddProductsPage = () => {
-  return <div><AddProductForm/></div>;
+  return (
+    <>
+      <Header />
+      <div>
+        <AddProductForm />
+      </div>
+    </>
+  );
 };

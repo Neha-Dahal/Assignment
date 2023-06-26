@@ -1,5 +1,6 @@
 import { fetchProducts } from "../../services/product";
 import { useState, useEffect } from "react";
+import "../../styles/productList.css"
 
 interface Product {
   id: number;
@@ -21,7 +22,7 @@ export const GetProducts = () => {
   }, []);
 
   return (
-    <div className="product-wrapper">
+    <div className="container">
       <h2 className="page-title"> Products List</h2>
       <div className="products-container">
         {myProducts.length === 0 ? (
@@ -32,8 +33,8 @@ export const GetProducts = () => {
               <h2 className="prod-title">
                 {item.id}. {item.productName}
               </h2>
-              <span className="prod-details">Rs.{item.price}</span>
-              <span className="prod-details">UserId: {item.userId}</span>
+              <span className="prod-details">Rs. {item.price}</span>
+              <span className="prod-details">Added by user : {item.userId}</span>
             </div>
           ))
         )}

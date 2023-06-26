@@ -3,7 +3,7 @@ import { Button } from "../button/Button";
 import { FormInput } from "../formInput/FormInput";
 import { loginUser } from "../../services/user";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { userSliceActions } from "../../redux/slice/user";
 
 export const LoginForm = () => {
@@ -38,8 +38,8 @@ export const LoginForm = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className="container">
+      <h2 className="page-title">Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <FormInput
@@ -60,6 +60,9 @@ export const LoginForm = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+        </div>
+        <div>
+          Don't have an Account? <Link to="/register">Register</Link>
         </div>
         <div>
           <Button disabled={isDisabled} buttonText="Login" />

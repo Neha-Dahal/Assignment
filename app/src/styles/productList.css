@@ -1,0 +1,16 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.product-card {
+  padding: 24px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid #28a327;
+  border-radius: 8px;
+  min-width: 20px;
+  box-shadow: 0 0 8px rgba(256, 256, 256, 0.2);
+}

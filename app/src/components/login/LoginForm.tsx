@@ -30,8 +30,7 @@ export const LoginForm = () => {
       localStorage.setItem("authentication_token", userId);
       dispatch(userSliceActions.login(userId));
 
-      navigate("/products", { replace: true });
-
+      navigate("/", { replace: true });
     } catch (error) {
       console.error(error);
     }

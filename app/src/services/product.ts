@@ -26,16 +26,3 @@ export const fetchProducts = async () => {
   return data;
 };
 
-// import { get, post} from "./axios";
-
-// export const createProducts = async (productData: any) => {
-//   const { data } = await post("products/addProduct", { body: productData });
-//   console.log("data", data);
-//   return data;
-// };
-
-// export const fetchProducts = async () => {
-//   const { data } = await get("products/getProducts");
-//   console.log("data", data);
-//   return data;
-// };
